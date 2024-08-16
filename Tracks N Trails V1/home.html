@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OffroadExplorer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .hero-background {
+            background-image: url('https://source.unsplash.com/featured/?forest');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <svg class="h-8 w-8 text-green-500 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 12l2-2m0 0l7-7 7 7M13 5v6m-4 4h4m-4 0a4 4 0 01-4-4m0 0a4 4 0 018 0m0 0a4 4 0 014 4m0 0h-4m4 0v6m-8-6h8m0 0V9m0 0L7 3" />
+                </svg>
+                <span class="text-2xl font-bold text-gray-800">OffroadExplorer</span>
+            </div>
+            <nav class="space-x-6">
+                <a href="#" class="text-gray-700 hover:text-green-500">Home</a>
+                <a href="#" class="text-gray-700 hover:text-green-500">Tracks</a>
+                <a href="#" class="text-gray-700 hover:text-green-500">About Us</a>
+                <a href="#" class="text-gray-700 hover:text-green-500">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-background h-96 flex flex-col justify-center items-center text-white">
+        <h1 class="text-4xl font-bold mb-4">Explore Off-Road Tracks</h1>
+        <div class="flex">
+            <input type="text" placeholder="Search for tracks..."
+                class="py-2 px-4 w-72 rounded-l-lg focus:outline-none text-gray-800">
+            <button class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6 rounded-r-lg">Search</button>
+        </div>
+    </section>
+
+    <!-- Featured Tracks Section -->
+    <section class="container mx-auto py-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">Featured Tracks</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Mountain Trail -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img class="w-full h-48" src="https://source.unsplash.com/featured/?mountain" alt="Mountain Trail">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800">Mountain Trail</h3>
+                    <p class="text-gray-600 mt-2">Distance: 60 miles<br>Difficulty: Hard</p>
+                    <button
+                        class="mt-4 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg">View
+                        Details</button>
+                </div>
+            </div>
+
+            <!-- Desert Trail -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img class="w-full h-48" src="https://source.unsplash.com/featured/?desert" alt="Desert Trail">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800">Desert Trail</h3>
+                    <p class="text-gray-600 mt-2">Distance: 45 miles<br>Difficulty: Medium</p>
+                    <button
+                        class="mt-4 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg">View
+                        Details</button>
+                </div>
+            </div>
+
+            <!-- Forest Trail -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img class="w-full h-48" src="https://source.unsplash.com/featured/?forest" alt="Forest Trail">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800">Forest Trail</h3>
+                    <p class="text-gray-600 mt-2">Distance: 35 miles<br>Difficulty: Easy</p>
+                    <button
+                        class="mt-4 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg">View
+                        Details</button>
+                </div>
+            </div>
+
+            <!-- River Track -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img class="w-full h-48" src="https://source.unsplash.com/featured/?river" alt="River Track">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800">River Track</h3>
+                    <p class="text-gray-600 mt-2">Distance: 40 miles<br>Difficulty: Medium</p>
+                    <button
+                        class="mt-4 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg">View
+                        Details</button>
+                </div>
+            </div>
+
+            <!-- Snow Trail -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img class="w-full h-48" src="https://source.unsplash.com/featured/?snow" alt="Snow Trail">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800">Snow Trail</h3>
+                    <p class="text-gray-600 mt-2">Distance: 55 miles<br>Difficulty: Extreme</p>
+                    <button
+                        class="mt-4 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg">View
+                        Details
