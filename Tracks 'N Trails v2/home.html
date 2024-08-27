@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracks 'N Trails | Home</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #E6E8E6;
+            color: #36413E;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Full-screen video background */
+        .video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Adjust hero section */
+        .hero-section {
+            position: relative;
+            height: 100vh; /* Fullscreen height */
+            overflow: hidden;
+        }
+
+        /* Overlay to darken the video for better text contrast */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for desired darkness */
+        }
+
+        /* Ensure the content is centered */
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Button and Link Styling */
+        .btn-primary {
+            background-color: #768280;
+            color: #FFF;
+        }
+
+        .btn-primary:hover {
+            background-color: #909F8E;
+        }
+
+        .link-hover:hover {
+            color: #FA9F42;
+        }
+
+        /* Header background */
+        .header-bg {
+            background-color: #586F7C;
+        }
+
+        /* Card Styling */
+        .card-bg {
+            background-color: #FFF;
+            color: #36413E;
+        }
+
+        .card-bg:hover {
+            background-color: #B3C2BF;
+        }
+    </style>
+</head>
+
+<body class="font-montserrat">
+    <!-- Header -->
+    <header class="header-bg shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/tracksntrailslogo.png" alt="Logo" class="h-8">
+                <span class="ml-2 text-xl font-bold text-white">OffroadExplorer</span>
+            </div>
+            <nav>
+                <ul class="flex space-x-8 text-white">
+                    <li><a href="#" class="hover:text-[#FA9F42]">Home</a></li>
+                    <li><a href="#" class="hover:text-[#FA9F42]">Tracks</a></li>
+                    <li><a href="#" class="hover:text-[#FA9F42]">About Us</a></li>
+                    <li><a href="#" class="hover:text-[#FA9F42]">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Full-screen Video Background -->
+        <video autoplay loop muted playsinline>
+            <source src="videos/background-video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Overlay for contrast -->
+        <div class="overlay"></div>
+
+        <!-- Text Content -->
+        <div class="content text-center text-white">
+            <h1 class="text-5xl font-bold">Welcome to 4WDExplorer</h1>
+            <p class="mt-4 text-lg">Your ultimate off-road adventure companion</p>
+            <a href="#content" class="mt-8 inline-block btn-primary text-white px-6 py-3 rounded-full hover:bg-[#FA9F42]">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section id="content" class="container mx-auto py-16 px-4 mt-10">
+        <!-- Search & Featured Tracks -->
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold">Explore Off-Road Tracks</h2>
+            <div class="mt-4 flex justify-center">
+                <input type="text" placeholder="Search for tracks..." class="w-1/3 p-3 border rounded-l-lg focus:outline-none">
+                <button class="btn-primary px-6 py-3 rounded-r-lg hover:bg-[#FA9F42]">Search</button>
+            </div>
+        </div>
+        <h3 class="text-2xl font-bold mb-6">Featured Tracks</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Track 1 -->
+            <div class="card-bg shadow-lg rounded-lg p-4">
+                <img src="https://source.unsplash.com/1600x900/?mountains,trail" alt="Mountain Trail" class="h-40 w-full object-cover rounded-md">
+                <div class="mt-4">
+                    <h4 class="text-xl font-bold">Mountain Trail</h4>
+                    <p class="mt-2">Distance: 60 miles</p>
+                    <p>Difficulty: Hard</p>
+                    <a href="#" class="mt-4 inline-block btn-primary text-white px-4 py-2 rounded-lg hover:bg-[#FA9F42]">View Details</a>
+                </div>
+            </div>
+            <!-- Track 2 -->
+            <div class="card-bg shadow-lg rounded-lg p-4">
+                <img src="https://source.unsplash.com/1600x900/?desert,trail" alt="Desert Trail" class="h-40 w-full object-cover rounded-md">
+                <div class="mt-4">
+                    <h4 class="text-xl font-bold">Desert Trail</h4>
+                    <p class="mt-2">Distance: 45 miles</p>
+                    <p>Difficulty: Medium</p>
+                    <a href="#" class="mt-4 inline-block btn-primary text-white px-4 py-2 rounded-lg hover:bg-[#FA9F42]">View Details</a>
+                </div>
+            </div>
+            <!-- Track 3 -->
+            <div class="card-bg shadow-lg rounded-lg p-4">
+                <img src="https://source.unsplash.com/1600x900/?forest,trail" alt="Forest Trail" class="h-40 w-full object-cover rounded-md">
+                <div class="mt-4">
+                    <h4 class="text-xl font-bold">Forest Trail</h4>
+                    <p class="mt-2">Distance: 35 miles</p>
+                    <p>Difficulty: Easy</p>
+                    <a href="#" class="mt-4 inline-block btn-primary text-white px-4 py-2 rounded-lg hover:bg-[#FA9F42]">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-10">Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="card-bg shadow-lg rounded-lg p-6">
+                    <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-route-travel-flatart-icons-outline-flatarticons.png" alt="Track Route" class="mx-auto mb-4">
+                    <h3 class="text-xl font-bold">Track your route</h3>
+                    <p class="mt-2">Record and share your off-road adventures with detailed maps and statistics.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="card-bg shadow-lg rounded-lg p-6">
+                    <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-map-adventure-flatart-icons-outline-flatarticons.png" alt="Discover Trails" class="mx-auto mb-4">
+                    <h3 class="text-xl font-bold">Discover new trails</h3>
+                    <p class="mt-2">Find and explore new offroad trails recommended by fellow adventurers.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="card-bg shadow-lg rounded-lg p-6">
+                    <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-camera-travel-flatart-icons-outline-flatarticons.png" alt="Capture Moments" class="mx-auto mb-4">
+                    <h3 class="text-xl font-bold">Capture moments</h3>
+                    <p class="mt-2">Document your journey with high-quality photos and share them instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
