@@ -1,0 +1,435 @@
+/* Fonts */
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    overflow: hidden; /* Ensures no scrollbars appear */
+}
+bg-white shadow-sm fixed w-full z-50
+/* Colors */
+.bg-f4e7a4 {
+    background-color: #f4e7a4;
+}
+
+.bg-a5c69f {
+    background-color: #a5c69f;
+}
+
+.text-2d5c3b {
+    color: #2d5c3b;
+}
+
+.text-689c6a {
+    color: #689c6a;
+}
+
+/* Buttons */
+.btn-secondary {
+    background-color: #689c6a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #2d5c3b;
+    transform: translateY(-2px);
+}
+
+/* Container and layout */
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.max-w-4xl {
+    max-width: 64rem;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+/* Video Background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+/* Ensuring content is readable over video */
+.relative {
+    position: relative;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.bg-opacity-70 {
+    background-color: white;
+}
+
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Full-screen video background */
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Hero section styling */
+.hero-section {
+    position: relative;
+    height: 100vh; /* Fullscreen height */
+    overflow: hidden;
+}
+
+/* Overlay to darken the video for better text contrast */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for desired darkness */
+}
+
+/* Ensure the content is centered */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Header styling */
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 50;
+}
+
+/* Container within the header */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header logo styling */
+header img {
+    height: 2rem; /* Adjust the size of the logo */
+}
+
+/* Header text styling */
+header span {
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2D3748; /* Dark gray color */
+}
+
+/* Header navigation links */
+nav ul {
+    display: flex;
+    gap: 2rem;
+    color: #4A5568; /* Medium gray color */
+}
+
+/* Navigation link hover state */
+nav a:hover {
+    color: #48BB78; /* Green color on hover */
+}
+
+/* Text content within the hero section */
+.content h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.content p {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+}
+
+.content a {
+    margin-top: 2rem;
+    display: inline-block;
+    background-color: #48BB78; /* Green button */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px; /* Full rounded corners */
+}
+
+.content a:hover {
+    background-color: #38A169; /* Darker green on hover */
+}
+
+/* Search & Featured Tracks section */
+#content {
+    margin-top: 2.5rem;
+}
+
+#content h2 {
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+#content input {
+    padding: 0.75rem;
+    border: 1px solid #E2E8F0; /* Light gray border */
+    border-radius: 0.375rem 0 0 0.375rem; /* Rounded corners on the left side */
+    outline: none;
+}
+
+#content button {
+    background-color: #48BB78; /* Green button */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0 0.375rem 0.375rem 0; /* Rounded corners on the right side */
+}
+
+#content button:hover {
+    background-color: #38A169; /* Darker green on hover */
+}
+
+/* Featured tracks section */
+#content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+#content .grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+#content .grid > div {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+#content img {
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.375rem;
+}
+
+/* Track title and description */
+#content h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+#content p {
+    margin-top: 0.5rem;
+    color: #718096; /* Light gray text */
+}
+
+/* Track button */
+#content a {
+    margin-top: 1rem;
+    display: inline-block;
+    background-color: #48BB78; /* Green button */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem; /* Rounded corners */
+}
+
+#content a:hover {
+    background-color: #38A169; /* Darker green on hover */
+}
+
+/* Features section */
+.bg-gray-100 {
+    background-color: #F7FAFC; /* Light gray background */
+}
+
+.py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.grid-cols-1 {
+    grid-template-columns: 1fr;
+}
+
+.md\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-gray-600 {
+    color: #718096; /* Medium gray text */
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-icons {
+    height: 4rem; /* Adjust the size of the icons */
+}
+
+.text-gray-800 {
+    color: #2D3748; /* Dark gray text */
+}
+
+.text-gray-700 {
+    color: #4A5568; /* Medium gray text */
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+}
+
+.text-5xl {
+    font-size: 3rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.bg-green-500 {
+    background-color: #48BB78;
+}
+
+.bg-green-600:hover {
+    background-color: #38A169;
+}
+
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

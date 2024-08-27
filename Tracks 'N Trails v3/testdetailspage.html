@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracks N Trails | Details</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F4E7A4;
+            color: #2D5C3B;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        /* Breadcrumb Styling */
+        .breadcrumb {
+            font-size: 0.875rem;
+            color: #689C6A;
+        }
+
+        .breadcrumb a {
+            color: #D76E28;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header background */
+        .header-bg {
+            background-color: #689C6A;
+        }
+
+        /* Card Styling */
+        .card-bg {
+            background-color: #FFF;
+            color: #2D5C3B;
+        }
+
+        .card-bg:hover {
+            background-color: #A5C69F;
+        }
+
+        /* Button and Link Styling */
+        .btn-primary {
+            background-color: #2D5C3B;
+            color: #FFF;
+        }
+
+        .btn-primary:hover {
+            background-color: #689C6A;
+        }
+
+        .link-hover:hover {
+            color: #D76E28;
+        }
+
+        /* Background Video Styling */
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.7; /* Adjust the opacity for better text visibility */
+        }
+
+        .content-overlay {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F4E7A4]">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="video-background">
+        <source src="videos/background-video1.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Header -->
+    <header class="header-bg shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-mountain-adventure-flatart-icons-outline-flatarticons.png" alt="Logo" class="h-8">
+                <span class="ml-2 text-xl font-bold text-white">OffroadExplorer</span>
+            </div>
+            <nav>
+                <ul class="flex space-x-8 text-white">
+                    <li><a href="#" class="hover:text-[#D76E28]">Home</a></li>
+                    <li><a href="#" class="hover:text-[#D76E28]">Tracks</a></li>
+                    <li><a href="#" class="hover:text-[#D76E28]">About Us</a></li>
+                    <li><a href="#" class="hover:text-[#D76E28]">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Track Details Section -->
+    <section class="pt-24 container mx-auto px-4 content-overlay">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb text-gray-600 mb-4">
+            <a href="#" class="hover:text-[#D76E28]">Home</a> &gt; <a href="#" class="hover:text-[#D76E28]">Tracks</a> &gt; <span class="text-[#689C6A]">Mountain Trail</span>
+        </div>
+
+        <!-- Track Overview -->
+        <div class="card-bg shadow-lg rounded-lg p-6 mb-8">
+            <h1 class="text-4xl font-bold mb-4">Mountain Trail</h1>
+            <p class="text-lg text-[#2D5C3B] mb-6">The Mountain Trail offers a thrilling off-road experience through rugged terrains and breathtaking scenery. Perfect for seasoned adventurers looking for a challenging yet rewarding journey.</p>
+
+            <!-- Location, Conditions, Difficulty -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-[#F4E7A4] p-4 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Location</h3>
+                    <p class="text-[#2D5C3B]">Rocky Mountains, Colorado</p>
+                </div>
+                <div class="bg-[#F4E7A4] p-4 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Track Conditions</h3>
+                    <p class="text-[#2D5C3B]">Rough, Rocky, Muddy in some parts</p>
+                </div>
+                <div class="bg-[#F4E7A4] p-4 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Difficulty</h3>
+                    <p class="text-[#2D5C3B]">Hard</p>
+                </div>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold mb-4">Gallery</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <img src="https://source.unsplash.com/1600x900/?offroad,mountain" alt="Mountain Trail Image 1" class="w-full h-48 object-cover rounded-lg">
+                    <img src="https://source.unsplash.com/1600x900/?jeep,trail" alt="Mountain Trail Image 2" class="w-full h-48 object-cover rounded-lg">
+                    <img src="https://source.unsplash.com/1600x900/?4x4,offroad" alt="Mountain Trail Image 3" class="w-full h-48 object-cover rounded-lg">
+                </div>
+            </div>
+
+            <!-- Detailed Information -->
+            <div class="bg-[#F4E7A4] p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">Track Details</h3>
+                <p class="text-[#2D5C3B] leading-relaxed">The Mountain Trail is a popular route among experienced off-roaders due to its challenging conditions and stunning landscapes. The trail is 60 miles long and takes you through diverse terrain, including rocky paths, steep climbs, and muddy stretches. Drivers are advised to equip their vehicles with appropriate off-road tires and carry recovery gear. The trail is best attempted during dry seasons as the mud can become difficult to navigate after heavy rainfall.</p>
+                <p class="mt-4 text-[#2D5C3B] leading-relaxed">The track is located in the heart of the Rocky Mountains, offering panoramic views of the surrounding peaks and valleys. Along the way, adventurers can find scenic spots for camping and picnics. However, due to the rough nature of the trail, it's recommended for those with prior off-road experience.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
